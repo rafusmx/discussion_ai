@@ -1,0 +1,7 @@
+= form_tag message_path, class: "message-form",
+  data: { controller: "message-form", action: "turbo:submit-end->message-form#resetInput" } do
+
+  = label_tag "message[content]", ">"
+  = text_field_tag "message[content]", nil, class: "message-input"
+
+  = submit_tag "Send", class: "message-submit"

@@ -1,0 +1,15 @@
+nav.discussion-nav
+  .discussion-title
+    |> DiscussionAI
+    span.discussion-subtitle powered by OpenAI
+
+.discussion-container
+  = turbo_stream_from "discussion_messages"
+  #discussion_messages.messages-contaienr
+    p.message-response
+      = "#{prompt_stamp} Hello nice handsome human person."
+      br/
+      ' What can I do for you today?
+
+  = render partial: "message_form"
+

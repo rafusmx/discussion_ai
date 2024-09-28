@@ -1,0 +1,70 @@
+.discussion-app {
+    font-family: 'Courier New', Courier, monospace;
+    background: #0d0208;
+    color: #008f11;
+}
+
+.main-container {
+    margin-top: 70px;
+    padding: 20px;
+    /* height: 85vh; */
+    width: 90vw;
+}
+
+.discussion-container {
+    width: 100%;
+}
+
+.message-response {
+    color: #00ff41;
+}
+
+.discussion-nav {
+    background-color: #000;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.discussion-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.discussion-subtitle {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.message-input {
+    border: none;
+    background-color: #0d0208;
+    color: #00ff41;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+}
+.message-input:focus-visible {
+    outline: none;
+
+}
+
+.message-submit {
+    background-color: #000;
+    color: #008f11;
+    border: 1px solid #008f11;
+    border-radius: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.message-submit:hover {
+    background-color: #0d0208;
+    color: #00ff41;
+    border: 2px solid #00ff41;
+}
+
