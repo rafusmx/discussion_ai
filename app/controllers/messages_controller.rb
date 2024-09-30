@@ -3,7 +3,7 @@ class MessagesController < ApplicationController
     return if message_params[:content].blank?
     render turbo_stream: turbo_stream.append(
       "discussion_messages",
-      partial: "messages/message", locals: { message_content: message_params[:content] }
+      partial: "messages/message", locals: { message_content: message_params[:content], response: false }
     )
     DiscussionMessageCreatedJob.perform_async(message_params[:content])
   end
