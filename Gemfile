@@ -16,6 +16,8 @@ gem 'rest-client', '~> 2.0'
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'sucker_punch'
 
+gem "redis"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
   gem "rspec-rails"
