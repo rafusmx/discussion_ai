@@ -5,8 +5,8 @@ class MessagesController < ApplicationController
       "discussion_messages",
       partial: "messages/message", locals: { message_content: message_params[:content], response: false }
     )
-    DiscussionMessageCreatedJob.perform_(message_params[:content])
     DiscussionMessageCreatedJob.perform_now(message_params[:content])
+    # DiscussionMessageCreatedJob.perform_async(message_params[:content])
   end
 
   private
